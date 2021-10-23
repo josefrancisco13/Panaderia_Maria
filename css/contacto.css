@@ -1,0 +1,130 @@
+:root {
+    --first-color: #3024d8;
+    --first-alpha-color: rgba(14, 0, 217, 0.75);
+    --second-color: #14192d;
+    --second-alpha-color: rgba(20, 25, 45, 0.75);
+    --third-color: #501464;
+    --third-alpha-color: rgba(80, 20, 100, 0.75);
+    --white-color: #fff;
+    --gray-light-color: #f3f3f3;
+    --gray-color: #ccc;
+    --gray-dark-color: #666;
+    --black-color: #000;
+    --link-color: #509ee3;
+    --title-color: #333;
+    --text-color: #222;
+    --white-alpha-color: rgba(255, 255, 255, 0.5);
+    --black-alpha-color: rgba(0, 0, 0, 0.5);
+    --font: "Raleway", sans-serif;
+    --max-width: 1200px;
+    --header-height: 4rem;
+  }
+
+
+.contact-information {
+    padding: 10px;
+    padding-top: 0;
+    margin-bottom: 1px solid #DE423A;
+}
+.contact-information .column__title {
+    font-family: 'Pacifico', cursive;
+    font-weight: 100;
+}
+.contact-information [class*="icon-"]{
+   font-size: 1.3em;
+   margin-right: 7px;
+   position: relative;
+   top: 5px;
+}
+.contact-information .social-icon {
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+.contact-information .social-icon [class*="icon-"] {
+    background: black;
+    color: white;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+.formulario {
+    padding: 10px;
+    padding-top: 0;
+}
+.formulario__label, .formulario__input-txt, .formulario__textarea {
+    display: block;
+    width: 100%;
+}
+.formulario__input-txt {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.formulario__textarea {
+    min-height: 100px;
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 200px;
+}
+
+.contact-form-loader{
+    grid-column: span 2 ;
+    }
+
+
+    /*************Modal********/
+
+
+    
+    .contact-form-response{
+        padding: 1rem;
+        width: 400px;
+        text-align: center;
+        background-color: var(--white-color);
+    
+    }
+ 
+
+
+.modal{
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black-alpha-color);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1s;
+
+}
+.modal#gracias:target{
+    opacity: 1;
+    pointer-events: auto;
+}
+.modal-content{
+    position: relative;
+}
+
+.formulario__btn {
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+@media screen and (min-width:480px) {
+    .contact .container--flex {
+        align-items: flex-start;
+    }
+    .contact-information p {
+        font-size: .75em;
+    }
+    .contact-information {
+        border-right: 1px solid #DE423A;
+        border-bottom: none;
+    }
+    .contact-information .column__title {
+        font-size: 1.5em;
+    }
+}
